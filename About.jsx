@@ -1,0 +1,77 @@
+import { Target, Users, Lightbulb } from 'lucide-react'
+import techBg from '../assets/tech-bg-1.jpg'
+
+const About = () => {
+  return (
+    <section id="about" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            About RMD26
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            We are a cutting-edge technology company specializing in AI/ML solutions, 
+            enterprise SaaS platforms, and full-stack engineering services.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image */}
+          <div className="relative">
+            <img 
+              src={techBg} 
+              alt="Technology Innovation" 
+              className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
+          </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0">
+                <Target className="h-8 w-8 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Mission</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  To make the latest and most powerful AI/ML technologies accessible to small and 
+                  medium-sized enterprises, enabling them to compete and innovate in the digital age.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0">
+                <Users className="h-8 w-8 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Who We Serve</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We focus on small and medium-sized enterprises that want to leverage 
+                  cutting-edge technology to transform their business operations and drive growth.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0">
+                <Lightbulb className="h-8 w-8 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Approach</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We deliver intelligent, data-driven solutions through elite AI models, 
+                  enterprise-grade SaaS platforms, and comprehensive full-stack engineering.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default About
+
