@@ -39,7 +39,7 @@ const Services = () => {
 
         <div className="space-y-20">
           {services.map((service, index) => (
-            <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+            <div key={index} data-project={service.title.toLowerCase().replace(/\s+/g, '')} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               {/* Content */}
               <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div className="flex items-center space-x-4">
