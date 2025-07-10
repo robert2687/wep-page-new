@@ -19,7 +19,7 @@ const Portfolio = () => {
     },
     {
       name: "Utility Mint",
-      description: "Platforma na mintovanie a správu NFT tokenov s reálnou úžitkovou hodnotou (vstupenky, vernostné karty).",
+      description: "A platform for minting and managing NFT tokens with real utility value (tickets, loyalty cards).",
       technologies: ["Blockchain", "IPFS", "React"]
     },
     {
