@@ -50,25 +50,6 @@ const DynamicContent = ({ children, onInteraction }) => {
     <div className="dynamic-content-wrapper">
       {children}
       
-      {/* Dynamic Interest Indicators */}
-      {userInterests.length > 0 && (
-        <div className="fixed top-20 right-4 z-40 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-gray-200 max-w-xs">
-          <h4 className="text-sm font-semibold text-gray-800 mb-2">Your Interests</h4>
-          <div className="flex flex-wrap gap-1">
-            {userInterests.slice(0, 6).map(interest => (
-              <span
-                key={interest}
-                className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full"
-              >
-                {interest.replace('-', ' ')}
-              </span>
-            ))}
-          </div>
-          <p className="text-xs text-gray-600 mt-2">
-            Based on your browsing, we've highlighted relevant content
-          </p>
-        </div>
-      )}
     </div>
   )
 }
