@@ -90,8 +90,3 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  )
-}
-
-export default About
