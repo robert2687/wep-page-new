@@ -29,7 +29,7 @@ const Portfolio = () => {
     },
     {
       name: "CogniScribe",
-      description: "Generatívny AI nástroj pre marketingové tímy, ktorý tvorí vysokokvalitné texty pre články, sociálne médiá a kampane.",
+      description: "A generative AI tool for marketing teams that creates high-quality copy for articles, social media, and campaigns.",
       technologies: ["Generative AI", "LLM", "FastAPI"]
     }
   ]
