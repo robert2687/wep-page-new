@@ -4,7 +4,7 @@ const Portfolio = () => {
   const projects = [
     {
       name: "CargoSwift",
-      description: "Inteligentný SaaS systém pre logistiku na optimalizáciu trás a správu flotily v reálnom čase.",
+      description: "Intelligent SaaS logistics system for route optimization and real-time fleet management.",
       technologies: ["AI/ML", "IoT", "React", "Node.js"]
     },
     {
