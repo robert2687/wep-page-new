@@ -9,7 +9,7 @@ const Portfolio = () => {
     },
     {
       name: "Synapsa X",
-      description: "Pokročilá e-commerce platforma využívajúca AI agentov na personalizáciu, dynamickú cenotvorbu a proaktívnu podporu.",
+      description: "An advanced e-commerce platform using AI agents for personalization, dynamic pricing, and proactive support.",
       technologies: ["AI Agents", "NLP", "Python", "GCP"]
     },
     {
