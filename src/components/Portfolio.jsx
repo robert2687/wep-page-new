@@ -24,7 +24,7 @@ const Portfolio = () => {
     },
     {
       name: "Aegis Shield",
-      description: "Systém na detekciu hrozieb pre cloudovú infraštruktúru s využitím detekcie anomálií na identifikáciu podozrivej aktivity.",
+      description: "A threat detection system for cloud infrastructure using anomaly detection to identify suspicious activity.",
       technologies: ["Anomaly Detection", "Cybersecurity", "AWS"]
     },
     {
