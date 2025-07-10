@@ -14,7 +14,7 @@ const Portfolio = () => {
     },
     {
       name: "XAI Finance for SMEs",
-      description: "Finančný analytický nástroj pre SME, ktorý poskytuje predikcie cash flow a identifikuje riziká s dôrazom na transparentnosť modelov.",
+      description: "A financial analysis tool for SMEs that provides cash flow predictions and identifies risks with an emphasis on model transparency.",
       technologies: ["XAI", "Python", "Vue.js"]
     },
     {
