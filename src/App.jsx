@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AIAssistant from './components/AIAssistant'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <AIAssistant />
     </div>
   )
 }
