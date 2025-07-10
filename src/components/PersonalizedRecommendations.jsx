@@ -71,39 +71,7 @@ const PersonalizedRecommendations = ({ userInterests = [] }) => {
   if (recommendations.length === 0) return null
 
   return (
-    <div className="fixed bottom-24 left-6 z-40 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-gray-200 max-w-sm">
-      <div className="flex items-center space-x-2 mb-3">
-        <Lightbulb className="h-5 w-5 text-blue-600" />
-        <h3 className="font-semibold text-gray-800">Recommended for You</h3>
-      </div>
-      
-      <div className="space-y-3">
-        {recommendations.map((rec, index) => (
-          <div key={index} className="group cursor-pointer" onClick={() => scrollToProject(rec.target)}>
-            <div className="flex items-start space-x-3 p-2 rounded-lg hover:bg-blue-50 transition-colors duration-200">
-              <div className="p-1 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors duration-200">
-                <rec.icon className="h-4 w-4 text-blue-600" />
-              </div>
-              <div className="flex-1">
-                <h4 className="text-sm font-medium text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
-                  {rec.title}
-                </h4>
-                <p className="text-xs text-gray-600 mt-1">{rec.description}</p>
-                <button className="text-xs text-blue-600 hover:text-blue-800 mt-1 font-medium">
-                  {rec.action} →
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      
-      <div className="mt-3 pt-3 border-t border-gray-200">
-        <p className="text-xs text-gray-500">
-          Personalized based on your interests
-        </p>
-      </div>
-    </div>
+    null
   )
 }
 
