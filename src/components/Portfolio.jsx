@@ -1,45 +1,36 @@
 import ProjectCard from './ProjectCard'
-import DynamicContent from './DynamicContent'
 
 const Portfolio = () => {
-  const { PersonalizedRecommendations, ProjectTracker, UserAnalytics } = DynamicContent()
-  
   const projects = [
     {
       name: "CargoSwift",
       description: "Intelligent SaaS logistics system for route optimization and real-time fleet management.",
-      technologies: ["AI/ML", "IoT", "React", "Node.js"],
-      category: "saas"
+      technologies: ["AI/ML", "IoT", "React", "Node.js"]
     },
     {
       name: "Synapsa X",
       description: "An advanced e-commerce platform using AI agents for personalization, dynamic pricing, and proactive support.",
-      technologies: ["AI Agents", "NLP", "Python", "GCP"],
-      category: "ai"
+      technologies: ["AI Agents", "NLP", "Python", "GCP"]
     },
     {
       name: "XAI Finance for SMEs",
       description: "A financial analysis tool for SMEs that provides cash flow predictions and identifies risks with an emphasis on model transparency.",
-      technologies: ["XAI", "Python", "Vue.js"],
-      category: "finance"
+      technologies: ["XAI", "Python", "Vue.js"]
     },
     {
       name: "Utility Mint",
       description: "A platform for minting and managing NFT tokens with real utility value (tickets, loyalty cards).",
-      technologies: ["Blockchain", "IPFS", "React"],
-      category: "fullstack"
+      technologies: ["Blockchain", "IPFS", "React"]
     },
     {
       name: "Aegis Shield",
       description: "A threat detection system for cloud infrastructure using anomaly detection to identify suspicious activity.",
-      technologies: ["Anomaly Detection", "Cybersecurity", "AWS"],
-      category: "cybersecurity"
+      technologies: ["Anomaly Detection", "Cybersecurity", "AWS"]
     },
     {
       name: "CogniScribe",
       description: "A generative AI tool for marketing teams that creates high-quality copy for articles, social media, and campaigns.",
-      technologies: ["Generative AI", "LLM", "FastAPI"],
-      category: "ai"
+      technologies: ["Generative AI", "LLM", "FastAPI"]
     }
   ]
 
@@ -69,24 +60,13 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Personalized Recommendations */}
-        <PersonalizedRecommendations />
-        
-        {/* User Analytics */}
-        <UserAnalytics />
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <ProjectTracker 
-              key={index}
-              projectName={project.name}
-              category={project.category}
-            >
-              <ProjectCard 
-                project={project} 
-                image={projectImages[index]} 
-              />
-            </ProjectTracker>
+            <ProjectCard 
+              key={index} 
+              project={project} 
+              image={projectImages[index]} 
+            />
           ))}
         </div>
 

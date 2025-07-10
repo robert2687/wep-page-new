@@ -1,17 +1,11 @@
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
-import DynamicContent from './DynamicContent'
 
 const Hero = () => {
-  const { trackInteraction } = DynamicContent()
-  
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
-      // Track user interest based on which section they navigate to
-      if (sectionId === 'portfolio') trackInteraction('general', 'portfolio_view')
-      if (sectionId === 'contact') trackInteraction('general', 'contact_interest')
     }
   }
 
