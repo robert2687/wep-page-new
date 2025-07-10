@@ -50,14 +50,10 @@ const Portfolio = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Portfolio
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover our innovative projects that showcase our expertise in AI/ML, 
-            enterprise SaaS, and full-stack development. Try our interactive demos below!
+            enterprise SaaS, and full-stack development
           </p>
-          <div className="mt-4 inline-flex items-center space-x-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
-            <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-            <span>Interactive demos available for CogniScribe, XAI Finance, and Aegis Shield</span>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
