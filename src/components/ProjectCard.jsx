@@ -1,5 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 import InteractiveDemo from './InteractiveDemo'
+import TechnicalDeepDive from './TechnicalDeepDive'
+import BlogIntegration from './BlogIntegration'
 
 const ProjectCard = ({ project, image }) => {
   const hasDemo = ['CogniScribe', 'XAI Finance for SMEs', 'Aegis Shield'].includes(project.name)
@@ -27,6 +29,12 @@ const ProjectCard = ({ project, image }) => {
             <InteractiveDemo project={project} />
           </div>
         )}
+        
+        {/* Technical Deep Dive */}
+        <TechnicalDeepDive project={project} />
+        
+        {/* Blog Integration */}
+        <BlogIntegration project={project} />
         
         {/* Technologies */}
         <div className="mb-4">
