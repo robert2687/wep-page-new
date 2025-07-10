@@ -20,16 +20,18 @@ const About = () => {
             <img 
               src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
               alt="Technology Innovation" 
-              className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+              className="rounded-2xl shadow-2xl w-full h-96 object-cover transition-transform duration-500 hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl"></div>
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500/20 rounded-full blur-xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
           </div>
 
           {/* Content */}
           <div className="space-y-8">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0">
-                <Target className="h-8 w-8 text-blue-600" />
+            <div className="flex items-start space-x-4 group">
+              <div className="flex-shrink-0 p-3 bg-blue-100 rounded-xl transition-all duration-300 group-hover:bg-blue-200 group-hover:scale-110">
+                <Target className="h-6 w-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Mission</h3>
@@ -40,9 +42,9 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0">
-                <Users className="h-8 w-8 text-blue-600" />
+            <div className="flex items-start space-x-4 group">
+              <div className="flex-shrink-0 p-3 bg-blue-100 rounded-xl transition-all duration-300 group-hover:bg-blue-200 group-hover:scale-110">
+                <Users className="h-6 w-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Who We Serve</h3>
@@ -53,9 +55,9 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0">
-                <Lightbulb className="h-8 w-8 text-blue-600" />
+            <div className="flex items-start space-x-4 group">
+              <div className="flex-shrink-0 p-3 bg-blue-100 rounded-xl transition-all duration-300 group-hover:bg-blue-200 group-hover:scale-110">
+                <Lightbulb className="h-6 w-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Approach</h3>
@@ -65,6 +67,26 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">50+</div>
+            <div className="text-gray-600">Projects Completed</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">25+</div>
+            <div className="text-gray-600">Happy Clients</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">3</div>
+            <div className="text-gray-600">Core Services</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">24/7</div>
+            <div className="text-gray-600">Support</div>
           </div>
         </div>
       </div>

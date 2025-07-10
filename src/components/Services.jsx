@@ -71,12 +71,34 @@ const Services = () => {
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+                  className="rounded-2xl shadow-2xl w-full h-96 object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl"></div>
+                <div className="absolute top-4 right-4 p-3 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <service.icon className="h-6 w-6 text-white" />
+                </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="mt-20 text-center bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-white">
+          <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h3>
+          <p className="text-xl mb-8 opacity-90">
+            Let's discuss how our services can help you achieve your goals
+          </p>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contact')
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+            className="bg-white text-blue-600 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+          >
+            Get Started Today
+          </button>
         </div>
       </div>
     </section>
