@@ -1,6 +1,6 @@
 import { ExternalLink } from 'lucide-react'
 
-const ProjectCard = ({ project, image }) => {
+const ProjectCard = ({ project, image, onLearnMore }) => {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
       {/* Project Image */}
@@ -34,7 +34,10 @@ const ProjectCard = ({ project, image }) => {
         </div>
 
         {/* Learn More Button */}
-        <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200">
+        <button 
+          onClick={() => onLearnMore(project)}
+          className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
+        >
           <span>Learn More</span>
           <ExternalLink className="h-4 w-4" />
         </button>

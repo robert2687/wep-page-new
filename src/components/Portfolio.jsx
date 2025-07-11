@@ -1,6 +1,11 @@
+import { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectModal from './ProjectModal'
 
 const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   const projects = [
     {
       name: "CargoSwift",
@@ -43,6 +48,16 @@ const Portfolio = () => {
     "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800"
   ]
 
+  const handleLearnMore = (project) => {
+    setSelectedProject(project)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedProject(null)
+  }
+
   return (
     <section id="portfolio" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,6 +77,7 @@ const Portfolio = () => {
               <ProjectCard 
               project={project} 
               image={projectImages[index]} 
+              onLearnMore={handleLearnMore}
               />
             </div>
           ))}
@@ -84,6 +100,13 @@ const Portfolio = () => {
             Start Your Project
           </button>
         </div>
+
+        {/* Project Modal */}
+        <ProjectModal 
+          project={selectedProject}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
       </div>
     </section>
   )
