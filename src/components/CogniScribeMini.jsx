@@ -252,7 +252,7 @@ const CogniScribeMini = () => {
             </p>
             <Button
               onClick={() => {
-                const element = document.getElementById('contact')
+                const element = document.querySelector('[data-project="cogniscribe"]') || document.getElementById('portfolio')
                 if (element) {
                   element.scrollIntoView({ behavior: 'smooth' })
                 }
