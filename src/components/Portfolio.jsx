@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import ProjectCard from './ProjectCard'
-import ProjectModal from './ProjectModal'
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null)
