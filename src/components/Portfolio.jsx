@@ -85,8 +85,6 @@ const Portfolio = () => {
               onLearnMore={handleLearnMore}
               />
             </div>
-              />
-            </div>
           ))}
         </div>
 
