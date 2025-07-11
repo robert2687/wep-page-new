@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import AIAssistant from './components/AIAssistant'
+import CogniScribeMini from './components/CogniScribeMini'
 import AISolutionRecommender from './components/AISolutionRecommender'
 import DynamicContent from './components/DynamicContent'
 import PersonalizedRecommendations from './components/PersonalizedRecommendations'
@@ -31,6 +32,7 @@ function App() {
           <Services />
           <Portfolio />
           <AISolutionRecommender />
+          <CogniScribeMini />
           <Contact />
         </main>
         <Footer />
