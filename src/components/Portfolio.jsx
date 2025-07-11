@@ -6,9 +6,6 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const [selectedProject, setSelectedProject] = useState(null)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
   const projects = [
     {
       name: "CargoSwift",
