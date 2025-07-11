@@ -69,26 +69,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">50+</div>
-            <div className="text-gray-600">Projects Completed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">25+</div>
-            <div className="text-gray-600">Happy Clients</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">3</div>
-            <div className="text-gray-600">Core Services</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">24/7</div>
-            <div className="text-gray-600">Support</div>
-          </div>
-        </div>
       </div>
     </section>
   )
