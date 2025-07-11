@@ -1,8 +1,12 @@
 import { useState } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectModal from './ProjectModal'
+import ProjectModal from './ProjectModal'
 
 const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   const [selectedProject, setSelectedProject] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -46,7 +50,22 @@ const Portfolio = () => {
     "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800",
     "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
     "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800"
+    "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800"
   ]
+
+  const handleLearnMore = (project) => {
+    setSelectedProject(project)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedProject(null)
+  }
 
   const handleLearnMore = (project) => {
     setSelectedProject(project)
@@ -80,6 +99,8 @@ const Portfolio = () => {
               onLearnMore={handleLearnMore}
               />
             </div>
+              />
+            </div>
           ))}
         </div>
 
@@ -100,6 +121,13 @@ const Portfolio = () => {
             Start Your Project
           </button>
         </div>
+
+        {/* Project Modal */}
+        <ProjectModal 
+          project={selectedProject}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
 
         {/* Project Modal */}
         <ProjectModal 

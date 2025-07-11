@@ -38,6 +38,9 @@ const ProjectCard = ({ project, image, onLearnMore }) => {
           onClick={() => onLearnMore(project)}
           className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
         >
+          onClick={() => onLearnMore(project)}
+          className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
+        >
           <span>Learn More</span>
           <ExternalLink className="h-4 w-4" />
         </button>
