@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import AIAssistant from './components/AIAssistant'
+import AISolutionRecommender from './components/AISolutionRecommender'
 import DynamicContent from './components/DynamicContent'
 import PersonalizedRecommendations from './components/PersonalizedRecommendations'
 import { useState } from 'react'
@@ -29,6 +30,7 @@ function App() {
           <About />
           <Services />
           <Portfolio />
+          <AISolutionRecommender />
           <Contact />
         </main>
         <Footer />
